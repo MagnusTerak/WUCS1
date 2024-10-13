@@ -94,11 +94,8 @@ function checkTodo(taskHandle, taskData) {
     item.style.animationName = "";
 
     if (item.classList.contains("taskAdded")) {
-        console.log("Taskadded")
         item.classList.remove("taskAdded");
     }
-
-    console.log("clicked", taskData.value)
 
     if (taskData.done) {
         item.style.animationName = "uncheckTask"
